@@ -7,16 +7,16 @@
 //
 
 import UIKit
+import CLTypingLabel
 
 class WelcomeViewController: UIViewController {
-
-    @IBOutlet weak private var titleLabel: UILabel!
+    
+    @IBOutlet weak private var titleLabel: CLTypingLabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        
+        titleLabel.text = "⚡️ChatChat⚡️"
+        
     }
-    
-
 }
