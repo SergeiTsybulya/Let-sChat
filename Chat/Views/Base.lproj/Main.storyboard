@@ -316,13 +316,21 @@
                                     <constraint firstAttribute="trailing" secondItem="pym-e9-R2r" secondAttribute="trailing" constant="20" id="ycp-Iy-yM8"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vUI-Oi-jqn">
+                                <rect key="frame" x="0.0" y="88" width="414" height="714"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6YX-ca-E8f"/>
                         <color key="backgroundColor" name="BrandPurple"/>
                         <constraints>
+                            <constraint firstItem="vUI-Oi-jqn" firstAttribute="leading" secondItem="6YX-ca-E8f" secondAttribute="leading" id="HjA-Ld-2V6"/>
                             <constraint firstItem="xlo-0G-XA6" firstAttribute="leading" secondItem="6YX-ca-E8f" secondAttribute="leading" id="JMa-Pn-SZL"/>
+                            <constraint firstItem="vUI-Oi-jqn" firstAttribute="top" secondItem="6YX-ca-E8f" secondAttribute="top" id="JUg-q1-ALH"/>
                             <constraint firstItem="6YX-ca-E8f" firstAttribute="bottom" secondItem="xlo-0G-XA6" secondAttribute="bottom" id="KKG-6H-f0d"/>
+                            <constraint firstItem="6YX-ca-E8f" firstAttribute="trailing" secondItem="vUI-Oi-jqn" secondAttribute="trailing" id="aDj-pB-HjU"/>
                             <constraint firstItem="xlo-0G-XA6" firstAttribute="trailing" secondItem="6YX-ca-E8f" secondAttribute="trailing" id="ce0-gb-Mph"/>
+                            <constraint firstItem="xlo-0G-XA6" firstAttribute="top" secondItem="vUI-Oi-jqn" secondAttribute="bottom" id="mm1-v6-hWn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Q5u-eL-Bgp">
@@ -334,6 +342,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="messageTextfield" destination="UWj-GQ-Vph" id="INS-Xk-EA9"/>
+                        <outlet property="tableView" destination="vUI-Oi-jqn" id="Abf-bL-wZP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jFP-qE-CyQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
